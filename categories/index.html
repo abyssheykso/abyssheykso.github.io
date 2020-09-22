@@ -7,12 +7,12 @@
   <meta name="description" content="翻译 | 深渊放置设施">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
-<meta property="og:title" content="翻译">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta property="og:title" content="category">
+<meta property="og:url" content="http://yoursite.com/category/index.html">
 <meta property="og:site_name" content="深渊放置设施">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-08-30T11:41:55.000Z">
-<meta property="article:modified_time" content="2020-08-30T16:13:15.463Z">
+<meta property="article:published_time" content="2020-08-30T11:39:01.000Z">
+<meta property="article:modified_time" content="2020-08-30T11:42:32.576Z">
 <meta property="article:author" content="赤毛prpr">
 <meta name="twitter:card" content="summary">
 
@@ -328,7 +328,7 @@
         minutes - 0-59之间的整数，做为date对象的分钟数
         seconds - 0-59之间的整数，做为date对象的秒数
         microseconds - 0-999之间的整数，做为date对象的毫秒数 */
-        var t1 = Date.UTC(2018,02,13,15,00,00); //北京时间2018-2-13 00:00:00
+        var t1 = Date.UTC(2020,08,30,22,00,00); //北京时间2018-2-13 00:00:00
         var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
         var diff = t2-t1;
         var diffYears = Math.floor(diff/years);
@@ -336,7 +336,7 @@
         var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
         var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
         var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-        document.getElementById("sitetime").innerHTML=" 已运行"+/*diffYears+" 年 "+*/diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+        document.getElementById("sitetime").innerHTML=" 本设施已运行"+/*diffYears+" 年 "+*/diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
     }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
     siteTime();
 </script>
